@@ -8,14 +8,23 @@ namespace BridgeDP
 {
      class Product : Structure
     {
-        public Product(string Name, string About, IView view) : base(Name, About)
+        private string Name;
+        private string About;
+        public Product(string name, string about, IView view)
         {
+            this.Name = name;
+            this.About = about;
             this.view = view;
+        }
+
+        public override void NewDisplay(IView newView)
+        {
+            this.view = newView;
         }
 
         public override void View()
         {
-            view.View(this);
+            view.View(this.Name, this.About);
         }
     }
 }

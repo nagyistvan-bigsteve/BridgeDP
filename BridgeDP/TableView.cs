@@ -8,13 +8,13 @@ namespace BridgeDP
 {
      class TableView : IView
     {
-        public void View(Structure structure)
+        public void View(string name, string about)
         {
             Console.WriteLine("Table view:");
             Console.WriteLine("-------------");
-            Console.WriteLine("| "+structure.name+" |");
+            Console.WriteLine("| "+name+" |");
             Console.WriteLine("-------------");
-            Console.WriteLine("| " +structure.about+" |");
+            Console.WriteLine("| " +about+" |");
             Console.WriteLine("------------- \n");
 
         }

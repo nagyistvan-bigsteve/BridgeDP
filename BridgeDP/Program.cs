@@ -12,15 +12,14 @@ namespace BridgeDP
             Structure person = new Person("Peti", "worker",tview);
             Structure phone = new Product("Iphone", "IOS, 2000mAh",dview);
 
-            dview.View(person);
-            tview.View(phone);
-
             person.View();
             phone.View();
 
-            new TableView().View(phone);
-            new DetailsView().View(person);
+            person.NewDisplay(dview);
+            phone.NewDisplay(new TableView());
 
+            person.View();
+            phone.View();
 
         }
     }

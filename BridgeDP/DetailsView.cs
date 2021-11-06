@@ -8,11 +8,11 @@ namespace BridgeDP
 {
     class DetailsView : IView
     {
-        public void View(Structure structure)
+        public void View(string name, string about)
         {
             Console.WriteLine("Details view:");
-            Console.WriteLine(structure.name);
-            Console.WriteLine(structure.about +"\n");
+            Console.WriteLine(name);
+            Console.WriteLine(about +"\n");
         }
     }
 }

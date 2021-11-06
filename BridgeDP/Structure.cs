@@ -9,15 +9,13 @@ namespace BridgeDP
     public abstract class Structure
     {
         protected IView view;
-        public string name { get; set; }
-        public string about { get; set; }
-
-        public Structure(string Name, string About)
+     
+        protected Structure()
         {
-            this.name = Name;
-            this.about = About;
         }
         public abstract void View();
+
+        public abstract void NewDisplay(IView newView);
         
     }
 }

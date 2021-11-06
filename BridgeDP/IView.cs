@@ -8,6 +8,6 @@ namespace BridgeDP
 {
     public interface IView
     {
-        void View(Structure str);
+        void View(string Name, string About);
     }
 }
