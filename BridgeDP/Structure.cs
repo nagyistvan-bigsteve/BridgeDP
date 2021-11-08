@@ -10,8 +10,9 @@ namespace BridgeDP
     {
         protected IView view;
      
-        protected Structure()
+        protected Structure(IView view)
         {
+            this.view = view;
         }
         public abstract void View();
 

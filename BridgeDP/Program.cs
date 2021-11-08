@@ -18,6 +18,8 @@ namespace BridgeDP
             person.NewDisplay(dview);
             phone.NewDisplay(new TableView());
 
+//            tview.View("asd", "asd");
+
             person.View();
             phone.View();
 

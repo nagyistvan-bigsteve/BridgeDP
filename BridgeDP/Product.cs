@@ -10,11 +10,10 @@ namespace BridgeDP
     {
         private string Name;
         private string About;
-        public Product(string name, string about, IView view)
+        public Product(string name, string about, IView view) : base (view)
         {
             this.Name = name;
             this.About = about;
-            this.view = view;
         }
 
         public override void NewDisplay(IView newView)
@@ -24,7 +23,7 @@ namespace BridgeDP
 
         public override void View()
         {
-            view.View(this.Name, this.About);
+            this.view.View(this.Name, this.About);
         }
     }
 }
